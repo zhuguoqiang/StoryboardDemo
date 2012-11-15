@@ -16,6 +16,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    UIStoryboard *stryBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil ];
+    self.window.rootViewController = [stryBoard instantiateInitialViewController];
+    
+    
     return YES;
 }
 
